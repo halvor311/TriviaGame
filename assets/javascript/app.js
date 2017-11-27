@@ -11,7 +11,7 @@ $(document).ready(function(){
     var maxTime = 30;
     var frequency = 1000;
     var countdown;
-
+    
     var questionOne = {
         question: "Who is the legendary band behind the song 'Inside Out'?",}
     var answerOne = {
@@ -49,7 +49,7 @@ $(document).ready(function(){
         d: ["Len", false]
     };
     var questionArray = [questionOne, questionTwo, questionThree, questionFour, questionFive];
-    var currentQuestion = 0;
+    var currentQuestion = questionArray[0];
 
     $("#start").click(function(){
         $(".questionContainer").empty();  
@@ -63,10 +63,12 @@ $(document).ready(function(){
             maxTime--;
         }
     }
+    function (generateQuiz)
     $(".questionContainer").append("<p id='countdown'></p>"); 
     $(".questions").append("<h1 class = questions></h1>" + questionOne.question.answerOne);
     $(".answers").append("<p class = answers></h1>" + questionArray[0]);
     console.log(questionArray);
+
     }); 
     
     
