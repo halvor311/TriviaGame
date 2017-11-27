@@ -1,0 +1,15 @@
+body{
+background-image: url("http://newcastlelive.com.au/wp-content/uploads/2017/08/90s-1184x620.jpg");
+}
+.jumbotron{
+    opacity: 0.7;
+    color: blue;
+}
+.title{
+    color: blue;
+}
+.instructions{
+    background-color: black;
+    color: rgb(250, 171, 171);
+    font-weight: strong;
+}
