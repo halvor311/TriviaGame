@@ -13,8 +13,8 @@ $(document).ready(function(){
     var countdown;
     
     var questionOne = {
-        question: "Who is the legendary band behind the song 'Inside Out'?",}
-    var answerOne = {
+        question: "Who is the legendary band behind the song 'Inside Out'?",
+    
         a: ["A: Third Eye Blind", false],
         b: ["B: Eve 6", true],
         c: ["C: Counting Crows", false],
@@ -65,8 +65,8 @@ $(document).ready(function(){
     }
     
     $(".questionContainer").append("<p id='countdown'></p>"); 
-    $(".questions").append("<h1 class = questions></h1>" + questionOne.question.answerOne);
-    $(".answers").append("<p class = answers></h1>" + questionArray[0]);
+    $(".questions").append(questionArray[0].question);
+    $(".answer_a").append("<p class = answer_a></p>" + questionArray[0].question.a.b.c.d);
 
     
     }); 
