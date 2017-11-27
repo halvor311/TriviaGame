@@ -50,7 +50,7 @@ $(document).ready(function(){
     var questionArray = [questionOne, questionTwo, questionThree, questionFour, questionFive];
     var currentQuestion = 0;
 
-    $("#Start").click(function(){
+    $("#start").click(function(){
         $(".questionContainer").empty();  
         countdown = setInterval(function() {decrementCounter()},frequency);          
      function decrementCounter(){
@@ -63,7 +63,8 @@ $(document).ready(function(){
         }
     }
     $(".questionContainer").append("<p id='countdown'></p>"); 
-    $("#quiz").append(questionArray[0]);
+    $(".questions").append(questionOne);
+    console.log(questionArray);
     }); 
     
     
