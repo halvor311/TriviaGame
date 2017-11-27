@@ -64,7 +64,7 @@ $(document).ready(function(){
         }
     }
     $(".questionContainer").append("<p id='countdown'></p>"); 
-    $(".questions").append("<h1 class = questions></h1>" + questionArray[0].question.answerOne);
+    $(".questions").append("<h1 class = questions></h1>" + questionOne.question.answerOne);
     $(".answers").append("<p class = answers></h1>" + questionArray[0]);
     console.log(questionArray);
     }); 
