@@ -11,7 +11,8 @@ $(document).ready(function(){
     var maxTime = 30;
     var frequency = 1000;
     var countdown;
-    
+    var startGame
+
     var questionOne = {
         question: "Who is the legendary band behind the song 'Inside Out'?",
     
@@ -43,10 +44,10 @@ $(document).ready(function(){
     };
     var questionFive = {
         question: "This band defined 90s alternative rock with their hit 'Semi-Charmed Life'",
-        a: ["Blues Traveler", false],
-        b: ["Third Eye Blind", true],
-        c: ["Gin Blossoms", false],
-        d: ["Len", false]
+       answer_a: ["Blues Traveler", false],
+        answer_b: ["Third Eye Blind", true],
+        answer_c: ["Gin Blossoms", false],
+        answer_d: ["Len", false]
     };
     var questionArray = [questionOne, questionTwo, questionThree, questionFour, questionFive];
     var currentQuestion = questionArray[0];
@@ -66,7 +67,16 @@ $(document).ready(function(){
     
     $(".questionContainer").append("<p id='countdown'></p>"); 
     $(".questions").append(questionArray[0].question);
-    $(".answer_a").append("<p class = answer_a></p>" + questionArray[0].question.a.b.c.d);
+    //show the question
+    $(".questions").html(questionArray[0].question.a)
+    //show the answer options
+    //move on to the next question
+    //resetting the game
+    function nextQuestion(){
+        questionArray++
+    }
+    startGame = setInterval(nextQuestion, 3000);
+    
 
     
     }); 
