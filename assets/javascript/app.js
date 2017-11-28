@@ -66,14 +66,15 @@ $(document).ready(function(){
     }
     
     $(".questionContainer").append("<p id='countdown'></p>"); 
+    //Shows the question
     $(".questions").append(questionArray[0].question);
-    //show the question
-    $(".questions").append(questionArray[0].a);
-    $(".questions").append(questionArray[0].b);
-    $(".questions").append(questionArray[0].c);
-    $(".questions").append(questionArray[0].d);
-    //show the answer options
+    //Shows the answer choices
+    $(".answer_a").append(questionArray[0].a);
+    $(".answer_b").append(questionArray[0].b);
+    $(".answer_c").append(questionArray[0].c);
+    $(".answer_d").append(questionArray[0].d);
     //move on to the next question
+    //Record the answer at the end
     //resetting the game
     function nextQuestion(){
         questionArray++
