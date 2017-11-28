@@ -68,7 +68,10 @@ $(document).ready(function(){
     $(".questionContainer").append("<p id='countdown'></p>"); 
     $(".questions").append(questionArray[0].question);
     //show the question
-    $(".questions").html(questionArray[0].question.a)
+    $(".questions").append(questionArray[0].a);
+    $(".questions").append(questionArray[0].b);
+    $(".questions").append(questionArray[0].c);
+    $(".questions").append(questionArray[0].d);
     //show the answer options
     //move on to the next question
     //resetting the game
